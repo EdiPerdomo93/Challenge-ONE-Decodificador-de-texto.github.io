@@ -1,0 +1,47 @@
+<!DOCTYPE html><!--Define la version de usado-->
+
+
+<html lang="es"> <!--idioma para que el navegador sepa que idioma es el que se esta usando y traduzca el texto-->
+
+    <head> <!--etiquetas informativas-->
+
+        <meta charset="UTF-8"><!--Diccionario uso de caracteres especiales-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Define el ancho de la pagina ajustado al dispositivo-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Define el modo de compatibilidad con el navegador-->
+        <title>Challenge ONE Decodificador de texto</title><!--titulo de la pagina-->
+        <link rel="stylesheet" href="style.css"><!--enlace a la hoja de estilo-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body><!--etiquetas de contenido--> 
+
+        <header><!--etiqueta de encabezado-->
+            <img id="logo" class="logo" src="imagenes/logo.svg" alt="Logo de Alura"> <!--imagen del logo-->
+        </header>
+
+        <main><!--etiqueta de contenido principal-->
+            <section class="izquierda"> <!--area de texto-->
+                <textarea class="textarea1" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus=""></textarea>
+                <div> <!--mensaje de advertencia-->
+                    <h6 class="informacion"><img id="exclamacion" src="imagenes/exclamacion.svg"> Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar">Encriptar</button>
+                    <button class="btn-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+                
+
+            <section> <!--area de mensaje-->
+                <textarea class="mensaje" cols="20" rows="10" ></textarea>
+                <div>
+                    <button class="btn-copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+        
+    <script scr="/script.js"></script>
+    </body>
+</html>
